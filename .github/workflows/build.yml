@@ -60,13 +60,18 @@ jobs:
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
 
+      - name: Get Date
+        id: date
+        run: |
+          echo "DATE=$(date +%Y%m%d-%H%M)" >> "$GITHUB_OUTPUT"
+
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: ReVanced
+          release_name: ${{ steps.date.outputs.DATE }}
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
           overwrite: true
@@ -114,31 +119,30 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@RV_Apps"
           NL=$'\n'
           APKS=""
           MODULES=""
           for OUTPUT in *; do
             DL_URL="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}/${OUTPUT}"
             if [[ $OUTPUT = *.apk ]]; then
-              APKS+="${NL}📦[${OUTPUT}](${DL_URL})"
+              APKS+="${NL}🔗 [${OUTPUT}](${DL_URL})"
             elif [[ $OUTPUT = *.zip ]]; then
-              MODULES+="${NL}📦[${OUTPUT}](${DL_URL})"
+              MODULES+="${NL}🔗 [${OUTPUT}](${DL_URL})"
             fi
           done
           MODULES=${MODULES#"$NL"}
           APKS=${APKS#"$NL"}
 
           BODY="$(sed 's/^\* \*\*/↪ \*\*/g; s/^\* `/↪ \*\*/g; s/`/\*/g; s/^\* /\↪/g; s/\*\*/\*/g; s/###//g; s/^- /↪ /g; /^==/d;' ../build.md)"
-          MSG="*New build!*
+          MSG="*New update 🎉*
 
           ${BODY}
 
-          *▼ Download Links:*
-          Modules:
+          *Modules* 😁👇
           ${MODULES}
 
-          APKs:
+          *APKs* 😁👇
           ${APKS}
           "
           echo "'$MSG'"
