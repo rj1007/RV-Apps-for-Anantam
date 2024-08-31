@@ -4,6 +4,6 @@
 
 Automated CI Builds  
 
-- To use YouTube and YT Music without root, install [**microG**](https://github.com/ReVanced/GmsCore/releases/latest) or [**MicroG RE**](https://github.com/WSTxda/MicroG-RE/releases/latest)
+- To use YouTube, YT Music and Photos without root, install [**microG**](https://github.com/ReVanced/GmsCore/releases/latest) or [**MicroG RE**](https://github.com/WSTxda/MicroG-RE/releases/latest)
 
 - To detach RV Apps from Play Store, use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach)
