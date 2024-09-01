@@ -4,7 +4,7 @@
 
 Automated CI Builds  
 
-Get the [CI releases](https://github.com/rjaakash/RV-Apps/releases).
+Get the [**CI releases**](https://github.com/rjaakash/RV-Apps/releases).
 
 - To use YouTube, YT Music and Photos without root, install [**microG**](https://github.com/ReVanced/GmsCore/releases/latest) or [**MicroG RE**](https://github.com/WSTxda/MicroG-RE/releases/latest)
 
