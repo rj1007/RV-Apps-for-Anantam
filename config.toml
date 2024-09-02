@@ -19,10 +19,15 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.a
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 arch = "arm64-v8a"
 
-[Photos-RV]
-app-name = "Photos"
+[Photos-nodpi-RV]
+app-name = "Photos-nodpi"
 rv-brand = "RV"
-build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+arch = "arm64-v8a"
+
+[Photos-120to640dpi-RV]
+app-name = "Photos-120to640dpi"
+rv-brand = "RV"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 apkmirror-dpi = "120-640dpi"
 arch = "arm64-v8a"
