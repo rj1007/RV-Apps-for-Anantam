@@ -1,6 +1,6 @@
 enable-magisk-update = true
 
-parallel-jobs = 3
+parallel-jobs = 2
 
 [YouTube-RV]
 app-name = "YouTube"
