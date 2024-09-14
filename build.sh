@@ -178,8 +178,7 @@ wait
 rm -rf temp/tmp.*
 if [ -z "$(ls -A1 ${BUILD_DIR})" ]; then abort "All builds failed."; fi
 
-log "\n- To use YouTube, YT Music and Photos without root, install [microG](https://github.com/ReVanced/GmsCore/releases/latest) or [MicroG RE](https://github.com/WSTxda/MicroG-RE/releases/latest)"
-log "- To detach RV Apps from Play Store, use [zygisk-detach](https://github.com/j-hc/zygisk-detach)"
+log "\n- [README](https://github.com/rjaakash/RV-Apps/blob/main/README.md)"
 log "\n**Dependencies** 👇"
 log "$(cat $TEMP_DIR/*-rv/changelog.md)"
 
