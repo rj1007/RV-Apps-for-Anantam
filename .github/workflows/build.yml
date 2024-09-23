@@ -119,7 +119,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@RV_Apps"
+          TG_CHAT="@RVX_for_Anantam"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -138,9 +138,6 @@ jobs:
           MSG="*New update 🎉*
 
           ${BODY}
-
-          *Modules* 😁👇
-          ${MODULES}
 
           *APKs* 😁👇
           ${APKS}
