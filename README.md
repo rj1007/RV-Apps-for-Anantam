@@ -4,4 +4,6 @@
 
 Automated CI Builds  
 
+Get the [**latest CI releases**](https://github.com/rj1007/RV-Apps-for-Anantam/releases/latest).
+
 - To use YouTube, YT Music and Photos, install [**microG**](https://github.com/ReVanced/GmsCore/releases/latest) or [**MicroG RE**](https://github.com/WSTxda/MicroG-RE/releases/latest)
