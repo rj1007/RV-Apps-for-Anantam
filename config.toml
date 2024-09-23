@@ -2,6 +2,9 @@ enable-magisk-update = false
 
 parallel-jobs = 3
 
+patches-version = "dev"
+integrations-version = "dev"
+
 [YouTube-RV]
 app-name = "YouTube"
 rv-brand = "RV"
