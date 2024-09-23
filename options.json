@@ -14,7 +14,7 @@
     "options": [
       {
         "key": "IconType",
-        "value": "YouTubeOutline"
+        "value": "Outline"
       }
     ]
   },
@@ -23,7 +23,7 @@
     "options": [
       {
         "key": "AppIcon",
-        "value": "Revancify Red"
+        "value": "AFN Blue"
       }
     ]
   },
@@ -32,7 +32,7 @@
     "options": [
       {
         "key": "IconType",
-        "value": "Rounded"
+        "value": "Thin"
       }
     ]
   },
@@ -41,20 +41,7 @@
     "options": [
       {
         "key": "AppIcon",
-        "value": "Revancify Red"
-      }
-    ]
-  },
-  {
-    "patchName": "Custom branding name for YouTube Music",
-    "options": [
-      {
-        "key": "AppNameNotification",
-        "value": "Music"
-      },
-      {
-        "key": "AppNameLauncher",
-        "value": "Music"
+        "value": "AFN Blue"
       }
     ]
   }
