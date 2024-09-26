@@ -1,5 +1,5 @@
 # RV Apps for Anantam
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/RV_Apps)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/RV_Apps_for_Anantam)
 [![CI](https://github.com/rj1007/RV-Apps-for-Anantam/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/rj1007/RV-Apps-for-Anantam/actions/workflows/ci.yml)
 
 Automated CI Builds  
