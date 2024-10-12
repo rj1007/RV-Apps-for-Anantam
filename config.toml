@@ -1,45 +1,21 @@
-enable-magisk-update = true
+enable-magisk-update = false
 
 parallel-jobs = 3
+
+patches-version = "dev"
+integrations-version = "dev"
 
 [YouTube-RV]
 app-name = "YouTube"
 rv-brand = "RV"
-build-mode = "both"
 included-patches = "'Change header'"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-
-[Music-RV]
-app-name = "Music"
-rv-brand = "RV"
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-arch = "arm64-v8a"
 
 [Photos-RV]
 app-name = "Photos"
 rv-brand = "RV"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-arch = "arm64-v8a"
-
-[Facebook-RV]
-app-name = "Facebook"
-rv-brand = "RV"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/facebook/"
-arch = "arm64-v8a"
-
-[Messenger-RV]
-app-name = "Messenger"
-rv-brand = "RV"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
-arch = "arm64-v8a"
-
-[Instagram-RV]
-app-name = "Instagram"
-rv-brand = "RV"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram/"
 arch = "arm64-v8a"
 
 [YouTube-RVX]
@@ -48,7 +24,7 @@ patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "RVX"
-build-mode = "both"
+excluded-patches = "'Custom branding name for YouTube'"
 included-patches = "'Custom header for YouTube' 'MaterialYou'"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
@@ -59,26 +35,8 @@ patches-source = "inotia00/revanced-patches"
 integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "RVX"
-build-mode = "both"
+excluded-patches = "'Custom branding name for YouTube Music'"
 included-patches = "'Custom header for YouTube Music'"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 arch = "arm64-v8a"
-
-[Reddit-RVX]
-app-name = "Reddit"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "RVX"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
-
-[X-Piko]
-app-name = "X"
-patches-source = "crimera/piko"
-integrations-source = "crimera/revanced-integrations"
-rv-brand = "Piko"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-apkmirror-dpi = "120-640dpi"
